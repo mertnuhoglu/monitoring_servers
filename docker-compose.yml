@@ -1,0 +1,10 @@
+version: '3'
+services:
+  monitorjs:
+    build: ./monitorjs
+    volumes:
+      - "./monitorjs:/srv/app/monitorjs"
+    working_dir: "/srv/app/monitorjs"
+    entrypoint: 
+      - "node"
+      - "monitor.js"
