@@ -14,7 +14,7 @@ setInterval( () => {
         console.log(error_msg)
         sendmail({
             from: 'no-reply@i-terative.com',
-            to: 'mert.nuhoglu@gmail.com',
+            to: 'mert.nuhoglu@gmail.com, selim.kayacan@i-terative.com',
             subject: error_msg,
             html: 'dentas doesnt work',
           }, function(err, reply) {
@@ -25,7 +25,7 @@ setInterval( () => {
         console.log(r.status)
       }
     })
-}, 3000)
+}, 3600000)
 
 
 
